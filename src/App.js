@@ -5,6 +5,7 @@ import SearchStudent from './components/SearchStudent';
 import DeleteStudent from './components/DeleteStudent';
 import ViewAllStudents from './components/ViewAllStudents';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Loginpage from './components/Loginpage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/search" element={ <SearchStudent/> }/>
       <Route path="/delete" element={ <DeleteStudent/> }/>
       <Route path="/viewall" element={ <ViewAllStudents/> }/>
+      <Route path="/login" element={ <Loginpage/> }/>
     </Routes>
     </BrowserRouter>
   );
